@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Documentação do ULTRON Oráculo, cliente pessoal rclone para acesso autorizado ao Google Drive.">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; base-uri 'none'; form-action 'none'">
+  <title>ULTRON Oráculo — cliente pessoal para Google Drive</title>
+  <style>
+    :root { color-scheme: light; font: 17px/1.65 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color: #172334; background: #f7f8fa; }
+    body { margin: 0; }
+    main { max-width: 760px; margin: 0 auto; padding: 56px 24px 40px; }
+    nav { display: flex; flex-wrap: wrap; gap: 24px; margin-bottom: 48px; }
+    a { color: #075a48; text-underline-offset: 3px; }
+    a:focus-visible { outline: 3px solid #075a48; outline-offset: 5px; border-radius: 2px; }
+    h1 { font-size: clamp(2rem, 6vw, 3rem); line-height: 1.12; letter-spacing: -.035em; margin: 12px 0 24px; }
+    h2 { font-size: 1.2rem; line-height: 1.35; margin-top: 36px; }
+    p, ul { margin: 16px 0; }
+    .label { color: #506176; font-size: .85rem; font-weight: 650; letter-spacing: .06em; text-transform: uppercase; }
+    .note { padding: 16px 20px; border-left: 3px solid #075a48; background: #eaf3f0; }
+    footer { border-top: 1px solid #d5dce4; margin-top: 48px; padding-top: 20px; color: #506176; font-size: .9rem; }
+  </style>
+</head>
+<body>
+  <main>
+    <nav aria-label="Navegação principal">
+      <a href="./" aria-current="page">Início</a>
+      <a href="privacidade.html">Privacidade</a>
+    </nav>
+    <p class="label">Documentação de um cliente pessoal</p>
+    <h1>ULTRON Oráculo</h1>
+    <p>Cliente pessoal baseado em <a href="https://rclone.org/drive/">rclone</a> para trabalhar com arquivos do Google Drive autorizados pelo próprio titular da conta.</p>
+    <p>O cliente é administrado pelo titular em suas próprias máquinas. Permite listar e consultar arquivos, baixar originais necessários e gravar resultados. Alterações, movimentações e remoções dependem das operações que o titular autorizar.</p>
+    <h2>Como o acesso funciona</h2>
+    <p>A autorização ocorre no fluxo OAuth do Google. O escopo principal de Google Drive permite trabalhar com arquivos preexistentes e salvar arquivos no Drive. O acesso efetivo também depende das permissões da conta sobre cada arquivo.</p>
+    <p>As conexões com as APIs do Google usam HTTPS. A configuração, as credenciais e o cache ficam nas máquinas administradas pelo titular, com acesso local restrito. Quando um novo grant precisa ser transferido entre essas máquinas, ele é transportado cifrado para a chave da máquina de destino.</p>
+    <p>A <a href="privacidade.html">política de privacidade</a> explica o alcance da permissão, o uso dos dados, os limites do cache e como revogar o acesso.</p>
+    <div class="note">
+      <p>Este site contém apenas documentação. Não recebe arquivos do Drive, não realiza login nem oferece um serviço público de armazenamento. O cliente pessoal não é apresentado como verificado pelo Google.</p>
+    </div>
+    <h2>Mantenedor e contato</h2>
+    <p>Contato pelo perfil público <a href="https://github.com/MarconiTeles">MarconiTeles no GitHub</a>.</p>
+    <footer>Documentação atualizada em 8 de novembro de 2026.</footer>
+  </main>
+</body>
+</html>
